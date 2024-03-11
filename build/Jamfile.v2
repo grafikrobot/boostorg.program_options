@@ -1,5 +1,5 @@
 
-project boost/program_options 
+project 
     : source-location ../src 
     ;
 
@@ -9,8 +9,9 @@ SOURCES =
     convert winmain split
     ;
 
-boost-lib program_options
+lib boost_program_options
     : $(SOURCES).cpp
     : # See https://svn.boost.org/trac/boost/ticket/5049
       <target-os>hpux,<toolset>gcc:<define>_INCLUDE_STDC__SOURCE_199901
+      <link>shared:<define>BOOST_PROGRAM_OPTIONS_DYN_LINK=1
     ;
