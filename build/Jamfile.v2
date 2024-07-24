@@ -1,6 +1,7 @@
 
 project
     : source-location ../src
+    : common-requirements <library>$(boost_dependencies)
     ;
 
 SOURCES =
