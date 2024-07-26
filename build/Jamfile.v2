@@ -1,4 +1,9 @@
 
+constant boost_dependencies_private :
+    /boost/bind//boost_bind
+    /boost/tokenizer//boost_tokenizer
+    ;
+
 project
     : source-location ../src
     : common-requirements <library>$(boost_dependencies)
