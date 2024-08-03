@@ -7,6 +7,7 @@ constant boost_dependencies_private :
 project
     : source-location ../src
     : common-requirements <library>$(boost_dependencies)
+    : requirements <library>$(boost_dependencies_private)
     ;
 
 SOURCES =
