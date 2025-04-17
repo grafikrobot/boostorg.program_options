@@ -19,8 +19,6 @@ constant boost_dependencies :
     /boost/type_traits//boost_type_traits ;
 
 project /boost/program_options
-    : common-requirements
-        <include>include
     ;
 
 explicit
